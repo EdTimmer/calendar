@@ -108,6 +108,50 @@ class App extends Component {
           14
           </div>
 
+          <div className="grid-item c-one">
+          15
+          </div>
+          <div className="grid-item c-two">
+          16
+          </div>
+          <div className="grid-item c-three">
+          17
+          </div>
+          <div className="grid-item c-four">
+          18
+          </div>
+          <div className="grid-item c-five">
+          19
+          </div>
+          <div className="grid-item c-six">
+          20
+          </div>
+          <div className="grid-item c-seven">
+          21
+          </div>
+
+          <div className="grid-item d-one">
+          22
+          </div>
+          <div className="grid-item d-two">
+          23
+          </div>
+          <div className="grid-item d-three">
+          24
+          </div>
+          <div className="grid-item d-four">
+          25
+          </div>
+          <div className="grid-item d-five">
+          26
+          </div>
+          <div className="grid-item d-six">
+          27
+          </div>
+          <div className="grid-item d-seven">
+          28
+          </div>
+
         
         </div>
       </div>
