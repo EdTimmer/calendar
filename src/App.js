@@ -54,16 +54,62 @@ class App extends Component {
     return (
       <div className="App">
         <h3>Calendar</h3>
-        <p>{today}</p>
-        <p>{local}</p>
-        <p>{year}</p>
-        <p>{month}</p>
-        <p>{weekday}</p>
+        <p>Today is: {today}</p>
+        <p>Local date time is: {local}</p>
+        <p>Current year: {year}</p>
+        <p>Current month: {month}</p>
+        <p>Current weekday: {weekday}</p>
 
-        <p>{currentDate}</p>
+        <p>Current date: {currentDate}</p>
 
-        {/*<p>{currentMonth}</p>
-    <p>{currentYear}</p>*/}
+        <div className="grid-container">
+
+          <div className="grid-item a-one">
+          1
+          </div>
+          <div className="grid-item a-two">
+          2
+          </div>
+          <div className="grid-item a-three">
+          3
+          </div>
+          <div className="grid-item a-four">
+          4
+          </div>
+          <div className="grid-item a-five">
+          5
+          </div>
+          <div className="grid-item a-six">
+          6
+          </div>
+          <div className="grid-item a-seven">
+          7
+          </div>
+
+          <div className="grid-item b-one">
+          8
+          </div>
+          <div className="grid-item b-two">
+          9
+          </div>
+          <div className="grid-item b-three">
+          10
+          </div>
+          <div className="grid-item b-four">
+          11
+          </div>
+          <div className="grid-item b-five">
+          12
+          </div>
+          <div className="grid-item b-six">
+          13
+          </div>
+          <div className="grid-item b-seven">
+          14
+          </div>
+
+        
+        </div>
       </div>
     );
   }
