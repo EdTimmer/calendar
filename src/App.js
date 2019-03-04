@@ -13,9 +13,13 @@ let local = moment(stillUtc).local().format('YYYY-MM-DD hh:mm:ss A');
 
 let year = moment(new Date()).format('YYYY');
 let month = moment(new Date()).format('MMMM');
+let monthNum = moment(new Date()).format('MM');
 let currentDate = moment(new Date()).format('DD');
 // const currentYear = today.getFullYear();
 // const currentMonth = today.getMonth();
+
+let firstDay = moment(`${year}-${monthNum}-01`);
+let dayOfWeekFirstDate = firstDay.day();
 
 const getWeekday = () => {
   let wkd = moment().isoWeekday();
@@ -47,6 +51,8 @@ const getWeekday = () => {
 
 const weekday = getWeekday();
 
+let dateInCalendar = "1"
+
 class App extends Component {
   
   render() {
@@ -58,17 +64,19 @@ class App extends Component {
         <p>Local date time is: {local}</p>
         <p>Current year: {year}</p>
         <p>Current month: {month}</p>
+        <p>Current month number: {monthNum}</p>
         <p>Current weekday: {weekday}</p>
 
         <p>Current date: {currentDate}</p>
+        <p>Day of week first day: {dayOfWeekFirstDate}</p>
 
         <div className="grid-container">
 
           <div className="grid-item a-one">
-          1
+            {dateInCalendar}
           </div>
           <div className="grid-item a-two">
-          2
+            {dateInCalendar}
           </div>
           <div className="grid-item a-three">
           3
@@ -150,6 +158,28 @@ class App extends Component {
           </div>
           <div className="grid-item d-seven">
           28
+          </div>
+
+          <div className="grid-item e-one">
+          29
+          </div>
+          <div className="grid-item e-two">
+          30
+          </div>
+          <div className="grid-item e-three">
+          31
+          </div>
+          <div className="grid-item e-four">
+          32
+          </div>
+          <div className="grid-item e-five">
+          33
+          </div>
+          <div className="grid-item e-six">
+          34
+          </div>
+          <div className="grid-item e-seven">
+          35
           </div>
 
         
