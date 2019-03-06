@@ -54,9 +54,12 @@ const weekday = getWeekday();
 let dateInCalendar = "1"
 
 class App extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.firstDayRef = React.createRef();
+  }
   render() {
-    console.log(today);
+    const { firstDayRef } = this;
     return (
       <div className="App">
         <h3>Calendar</h3>
@@ -72,7 +75,7 @@ class App extends Component {
 
         <div className="grid-container">
 
-          <div className="grid-item a-one">
+          <div className="grid-item a-one" ref={firstDayRef}>
             {dateInCalendar}
           </div>
           <div className="grid-item a-two">
